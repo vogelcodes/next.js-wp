@@ -4,7 +4,7 @@ export default function Intro() {
   return (
     <section className="flex-col lg:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
       <h1 className="font-sans lg:font-light text-4xl lg:text-7xl font-bold tracking-tighter leading-tight md:pr-8">
-        Leveciar.com.br
+        Levecriar.com.br
       </h1>
       <h4 className="md:text-4xl font-serif text-center md:text-left text-lg mt-5 md:pl-8">
       Um novo olhar para a criação de filhos com foco na criação com apego e no desenvolvimento de inteligência emocional
