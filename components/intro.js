@@ -2,24 +2,19 @@ import { CMS_NAME, CMS_URL } from '../lib/constants'
 
 export default function Intro() {
   return (
-    <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
-      <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
-        Blog.
+    <section className="flex-col lg:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
+      <h1 className="font-sans lg:font-light text-4xl lg:text-7xl font-bold tracking-tighter leading-tight md:pr-8">
+        Leveciar.com.br
       </h1>
-      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        A statically generated blog example using{' '}
+      <h4 className="md:text-4xl font-serif text-center md:text-left text-lg mt-5 md:pl-8">
+      Um novo olhar para a criação de filhos com foco na criação com apego e no desenvolvimento de inteligência emocional
+       e financeira. Conheça nossa página no Instagram: {' '}
         <a
-          href="https://nextjs.org/"
+          href="https://instagram.com/levecriar"
           className="underline hover:text-success duration-200 transition-colors"
         >
-          Next.js
-        </a>{' '}
-        and{' '}
-        <a
-          href={CMS_URL}
-          className="underline hover:text-success duration-200 transition-colors"
-        >
-          {CMS_NAME}
+          @levecriar
+        
         </a>
         .
       </h4>
