@@ -8,7 +8,7 @@ export default function Intro() {
       </h1>
       <h4 className="md:text-4xl font-serif text-center md:text-left text-lg mt-5 md:pl-8">
       Um novo olhar para a criação de filhos com foco na criação com apego e no desenvolvimento de inteligência emocional
-       e financeira. Conheça nossa página no Instagram: {' '}
+       e financeira. Conheça nossa página no Instagram {' '}
         <a
           href="https://instagram.com/levecriar"
           className="underline hover:text-success duration-200 transition-colors"
