@@ -1,5 +1,6 @@
+const domain = process.env.WORDPRESS_DOMAIN
 module.exports = {
     images: {
-      domains: [process.env.WORDPRESS_DOMAIN],
+      domains: [domain],
     },
   }
