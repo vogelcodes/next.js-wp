@@ -8,6 +8,7 @@ export default function CoverImage({ title, coverImage, slug }) {
           src={coverImage?.sourceUrl}
           device={828}
           quality={85}
+          loading='eager'
           alt="Picture of the author"
           width={coverImage?.mediaDetails.width}
           height={coverImage?.mediaDetails.height}
