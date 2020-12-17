@@ -11,14 +11,17 @@ export default function HeroPost({
   author,
   slug,
 }) {
+  const indexOf = excerpt.search('href=');
+  const text = excerpt.slice(0, indexOf) + 'href=\"https://home.levecriar.com.br/posts/' + slug +'/\">&hellip; Ler mais</a></p>\n'
+
   return (
     <section>
+      <div className="md:grid md:grid-cols-2 md:col-gap-16 lg:col-gap-8 mb-20 md:mt-32 md:mb-28">
       <div className="mb-8 md:mb-16">
         {coverImage && (
           <CoverImage title={title} coverImage={coverImage} slug={slug} />
         )}
       </div>
-      <div className="md:grid md:grid-cols-2 md:col-gap-16 lg:col-gap-8 mb-20 md:mb-28">
         <div>
           <h3 className="mb-4 text-4xl lg:text-6xl leading-tight">
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
@@ -31,14 +34,14 @@ export default function HeroPost({
           <div className="mb-4 md:mb-0 text-lg">
             <Date dateString={date} />
           </div>
-        </div>
         <div>
           <div
             className="text-lg leading-relaxed mb-4"
-            dangerouslySetInnerHTML={{ __html: excerpt }}
-          />
+            dangerouslySetInnerHTML={{ __html: text }}
+            />
           <Avatar author={author} />
         </div>
+            </div>
       </div>
     </section>
   )

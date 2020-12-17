@@ -2,7 +2,7 @@ import { CMS_NAME, CMS_URL } from '../lib/constants'
 
 export default function Intro() {
   return (
-    <section className="flex-col lg:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
+    <section className="flex-col lg:flex-row flex items-center md:justify-between mb-16 md:mb-12">
       <h1 className="font-sans lg:font-light text-4xl lg:text-7xl font-bold tracking-tighter leading-tight md:pr-8">
         Levecriar.com.br
       </h1>
@@ -11,7 +11,7 @@ export default function Intro() {
        e financeira. Conheça nossa página no Instagram {' '}
         <a
           href="https://instagram.com/levecriar"
-          className="underline hover:text-success duration-200 transition-colors"
+          className="underline hover:text-type duration-200 transition-colors"
         >
           @levecriar
         
