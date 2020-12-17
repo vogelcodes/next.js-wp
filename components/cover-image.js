@@ -9,7 +9,7 @@ export default function CoverImage({ title, coverImage, slug }) {
           device={580}
           quality={75}
           layout="responsive"
-          loading='eager'
+          //loading='eager'
           alt="Picture of the author"
           width={coverImage?.mediaDetails.width}
           height={coverImage?.mediaDetails.height}
