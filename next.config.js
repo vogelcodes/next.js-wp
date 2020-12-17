@@ -1,5 +1,5 @@
 module.exports = {
     images: {
-      domains: ['levecriar.com.br'],
+      domains: [process.env.WORDPRESS_DOMAIN],
     },
   }
