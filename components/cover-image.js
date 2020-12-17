@@ -6,7 +6,7 @@ export default function CoverImage({ title, coverImage, slug }) {
   const image = (
     <Image
           src={coverImage?.sourceUrl}
-          device={828}
+          device={640}
           quality={85}
           loading='eager'
           alt="Picture of the author"
