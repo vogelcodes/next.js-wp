@@ -2,14 +2,15 @@ import cn from 'classnames'
 import Link from 'next/link'
 import Image from 'next/image'
 
-export default function CoverImage({ title, coverImage, slug }) {
+export default function CoverImage({ isPreview, title, coverImage, slug }) {
+  const src = isPreview ? coverImage?.mediaDetails.sizes[3].sourceUrl : coverImage?.sourceUrl;
   const image = (
     <Image
-          src={coverImage?.sourceUrl}
+          src={src}
           device={580}
           quality={75}
           layout="responsive"
-          //loading='eager'
+          loading='eager'
           alt="Picture of the author"
           width={coverImage?.mediaDetails.width}
           height={coverImage?.mediaDetails.height}
@@ -21,6 +22,7 @@ export default function CoverImage({ title, coverImage, slug }) {
   )
   return (
     <div className="sm:mx-0">
+      
       {slug ? (
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a aria-label={title}>{image}</a>
