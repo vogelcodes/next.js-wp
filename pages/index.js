@@ -17,7 +17,7 @@ export default function Index({ allPosts: { edges }, preview }) {
         <Head>
           <title>LeveCriar.com.br</title>
         </Head>
-        <Container>
+        <Container className="bg-bg">
           
           <Intro />
           {heroPost && (

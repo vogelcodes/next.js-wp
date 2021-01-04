@@ -9,7 +9,7 @@ export default function CoverImage({ isPreview, title, coverImage, slug }) {
           src={src}
           device={580}
           quality={75}
-          layout="responsive"
+          layout="intrinsic"
           loading='eager'
           alt="Picture of the author"
           width={coverImage?.mediaDetails.width}
@@ -21,7 +21,7 @@ export default function CoverImage({ isPreview, title, coverImage, slug }) {
           />
   )
   return (
-    <div className="sm:mx-0">
+    <div className="sm:mx-auto max-w-xl">
       
       {slug ? (
         <Link as={`/posts/${slug}`} href="/posts/[slug]">

@@ -18,7 +18,7 @@ export default function Post({ post, posts, preview }) {
   const morePosts = posts?.edges
 
   if (!router.isFallback && !post?.slug) {
-    return <ErrorPage statusCode={404} />
+    return <ErrorPage statusCode={404} title="Tá perdida mamãe?" />
   }
 
   return (
